@@ -1,0 +1,30 @@
+.text-center{
+    text-align:center;
+}
+
+.margin-bottom-small{margin-bottom:1.5rem;}
+
+.margin-bottom-medium{margin-bottom:4rem;}
+
+.margin-bottom-large{margin-bottom:8rem;
+
+    @include respond(tab-port){
+        margin-bottom:3rem !important;
+    }    
+}
+
+.margin-bottom-top{margin-top:8rem;
+    @include respond(tab-port){
+        margin-top:2rem;
+    }
+}
+
+.margin-top-small{margin-top:2rem;
+    @include respond(tab-port){margin-top:0;}
+}
+
+.padding-top-medium{padding-top:8rem;
+        @include respond(phone){
+          padding-top:4rem;
+        }
+    }
